@@ -1,15 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'lib-wysiwyg',
+  selector: 'lib-angular-froala-wysiwyg',
   template: `
     <p>
-      wysiwyg works!
+      angular-froala-wysiwyg works!
     </p>
   `,
   styles: []
 })
-export class WysiwygComponent implements OnInit {
+export class AngularFroalaWysiwygComponent implements OnInit {
 
   constructor() { }
 

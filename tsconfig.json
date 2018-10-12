@@ -23,6 +23,12 @@
       ],
       "wysiwyg/*": [
         "dist/wysiwyg/*"
+      ],
+      "angular-froala-wysiwyg": [
+        "dist/angular-froala-wysiwyg"
+      ],
+      "angular-froala-wysiwyg/*": [
+        "dist/angular-froala-wysiwyg/*"
       ]
     }
   }

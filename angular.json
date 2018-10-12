@@ -167,6 +167,46 @@
           }
         }
       }
+    },
+    "angular-froala-wysiwyg": {
+      "root": "projects/angular-froala-wysiwyg",
+      "sourceRoot": "projects/angular-froala-wysiwyg/src",
+      "projectType": "library",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/angular-froala-wysiwyg/tsconfig.lib.json",
+            "project": "projects/angular-froala-wysiwyg/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "project": "projects/angular-froala-wysiwyg/ng-package.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/angular-froala-wysiwyg/src/test.ts",
+            "tsConfig": "projects/angular-froala-wysiwyg/tsconfig.spec.json",
+            "karmaConfig": "projects/angular-froala-wysiwyg/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/angular-froala-wysiwyg/tsconfig.lib.json",
+              "projects/angular-froala-wysiwyg/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "my-app"
