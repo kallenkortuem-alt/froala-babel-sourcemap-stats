@@ -9,7 +9,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "sourcemap": "ng build --prod --named-chunks --common-chunk --source-map --output-hashing=none",
-    "prebabel:stats": "node node_modules/babel-cli/bin/babel.js node_modules/angular-froala-wysiwyg --out-dir node_modules/angular-froala-wysiwyg --presets es2015",
+    "prebabel:stats": "npm install angular-froala-wysiwyg --save && node node_modules/babel-cli/bin/babel.js node_modules/angular-froala-wysiwyg --out-dir node_modules/angular-froala-wysiwyg --presets es2015",
     "preclean:stats": "npm uninstall angular-froala-wysiwyg --save && npm install angular-froala-wysiwyg --save",
     "prelib:stats": "npm uninstall angular-froala-wysiwyg --save",
     "babel:stats": "npm run sourcemap && source-map-explorer --html dist/my-app/main.js > sourcemap/babel.html",
